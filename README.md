@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+# Olga — Professional Enneagram Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Olga is a complete, best-practice Enneagram inventory. Answer 108 statements and receive a full analysis of your dominant type (1–9), your wing, core motivations and fears, strengths, growth challenges, and stress/growth directions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **108-item questionnaire** — 12 items per type (gold standard), rated on a 5-point agree/disagree scale
+- **Automatic scoring** — ranks all nine types and identifies your dominant type plus your wing (the higher-scoring adjacent type)
+- **Full type analysis** — overview, center, core desire/fear, key motivation, strengths, growth challenges
+- **Level dynamics** — at-best state, direction under stress (disintegration), and direction when growing (integration)
+- **All 18 wings documented** — both wings shown for your type
+- **Print / Save as PDF** on the results screen
 
-## React Compiler
+## Tech
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React + TypeScript + Vite. Scoring runs entirely client-side — no backend required.
 
-## Expanding the Oxlint configuration
+## Run locally
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Build
+
+```bash
+npm run build      # outputs to dist/
+```
+
+## Project structure
+
+```
+src/
+  data/questions.ts   # 108-item inventory (12 per type)
+  data/types.ts       # type profiles + 18 wing descriptions
+  scoring.ts          # scoring + wing calculation
+  App.tsx             # UI (intro / test / results)
+  App.css             # styles
+```
+
+---
+
+For self-understanding and reflection — not a clinical or diagnostic instrument.
