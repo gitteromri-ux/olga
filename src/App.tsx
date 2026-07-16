@@ -123,7 +123,6 @@ export default function App() {
   const r = result!;
   const t = types[r.primaryType];
   const wing = t.wings.find((w) => w.key === r.wingKey)!;
-  const isFour = r.primaryType === 4;
 
   return (
     <div className="wrap">
@@ -203,31 +202,6 @@ export default function App() {
             <div><h4>At their best</h4><p>{t.atBest}</p></div>
             <div><h4>Under stress →</h4><p>{t.underStress}</p></div>
             <div><h4>When growing →</h4><p>{t.whenGrowing}</p></div>
-          </div>
-        </section>
-
-        {/* Type 4 compatibility */}
-        <section className="section compat">
-          <h2>Compatibility with Type 4 — The Individualist</h2>
-          {isFour ? (
-            <p className="compat-note">
-              You are a Type 4. Below is how two Individualists relate to one another.
-            </p>
-          ) : (
-            <p className="compat-note">
-              How your type ({t.name}) pairs with a Type 4 partner.
-            </p>
-          )}
-          <div className="compat-head">
-            <span className="compat-rating">
-              {"●".repeat(t.compat4.rating)}<span className="muted">{"●".repeat(5 - t.compat4.rating)}</span>
-            </span>
-            <span className="compat-headline">{t.compat4.headline}</span>
-          </div>
-          <div className="compat-body">
-            <div><h4>Where it works</h4><p>{t.compat4.strengths}</p></div>
-            <div><h4>Where friction arises</h4><p>{t.compat4.friction}</p></div>
-            <div><h4>Tips to thrive together</h4><p>{t.compat4.tips}</p></div>
           </div>
         </section>
 
