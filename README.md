@@ -1,6 +1,6 @@
-# Olga — Professional Enneagram Assessment
+# Hana — Professional Enneagram Assessment
 
-Olga is a complete, best-practice Enneagram inventory. Answer 108 statements and receive a full analysis of your dominant type (1–9), your wing, core motivations and fears, strengths, growth challenges, and stress/growth directions.
+Hana is a complete, best-practice Enneagram inventory. Answer 108 statements and receive a full analysis of your dominant type (1–9), your wing, core motivations and fears, strengths, growth challenges, and stress/growth directions.
 
 ## Features
 

@@ -56,7 +56,7 @@ export default function App() {
           <p className="eyebrow">Professional Enneagram Assessment · 108 items</p>
           <h1>Discover your Enneagram type, wing, and depth.</h1>
           <p className="lead">
-            Olga is a complete, best-practice Enneagram inventory. Answer 108 statements
+            Hana is a complete, best-practice Enneagram inventory. Answer 108 statements
             honestly and you'll receive a full analysis of your dominant type (1–9), your
             wing, your core motivations and fears, and your growth and stress directions.
           </p>
@@ -227,12 +227,12 @@ function Header() {
   return (
     <header className="site-header">
       <div className="logo">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-label="Olga">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-label="Hana">
           <circle cx="16" cy="16" r="13" stroke="currentColor" strokeWidth="1.6" />
           <path d="M16 3 L27 22 L5 22 Z" stroke="currentColor" strokeWidth="1.4" />
           <path d="M16 3 L16 29 M5 22 L27 22 M8.5 12 L23.5 12" stroke="currentColor" strokeWidth="1" opacity="0.5" />
         </svg>
-        <span>Olga</span>
+        <span>Hana</span>
       </div>
       <span className="header-tag">Enneagram Assessment</span>
     </header>
@@ -242,7 +242,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="site-footer">
-      <p>Olga · A professional Enneagram assessment. For self-understanding and reflection — not a clinical or diagnostic instrument.</p>
+      <p>Hana · A professional Enneagram assessment. For self-understanding and reflection — not a clinical or diagnostic instrument.</p>
     </footer>
   );
 }
